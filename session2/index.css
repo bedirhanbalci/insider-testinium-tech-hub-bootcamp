@@ -1,0 +1,68 @@
+.test {
+  color: blue; /* yazı rengi değiştirildi  */
+}
+
+.ins-product-element {
+  color: red; /* keyword */
+  color: rgb(255, 99, 71); /* rgb format */
+  color: #ff6347; /* hex format */
+  color: hsl(9, 100%, 64%); /* hsl format */
+}
+
+.element {
+  color: #ff6347;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background-color: aquamarine;
+  background-image: url("https://picsum.photos/id/27/600/300");
+  background-repeat: no-repeat;
+}
+
+.img {
+  width: 500px;
+  height: 600px;
+  border: 1px solid;
+}
+
+.image-with-background {
+  background-image: url("https://image.useinsider.com/francfrancjp/defaultImageLibrary/banner-1685548877.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-with-color {
+  background-color: #2ca4c9;
+}
+
+.element-with-border {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #c4f23f;
+  border-radius: 100px;
+}
+
+.element2 {
+  width: 60%;
+  max-width: 400px;
+  height: 50vh;
+  min-height: 300px;
+  border: 3px solid black;
+}
+
+.wrapper {
+  width: 600px;
+  height: 200px;
+  border: 2px solid blue;
+  padding: 32px;
+}
+
+.test2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 2px solid black;
+  margin: 0 auto;
+  line-height: 200px;
+  text-align: center;
+}
