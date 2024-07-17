@@ -1,1 +1,1 @@
-# insider-testinium-tech-hub-bootcamp
+# Insider Testinium Tech Hub Developer Bootcamp
