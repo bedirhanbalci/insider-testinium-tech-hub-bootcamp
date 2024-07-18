@@ -1,0 +1,114 @@
+/* .ins-preview-wrapper {
+  display: flex;
+  flex-direction: colum;
+}
+
+.ins-preview-wrapper div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.ins-preview-wrapper div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: violet;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  margin: 5px;
+  border: 1px solid black;
+} */
+
+.ins-preview-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  width: 95vw;
+  height: 25vh;
+  gap: 5px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.ins-preview-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f4986;
+  width: 100px;
+  height: 50px;
+  /* animation: blink 5s ease; */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  color: white;
+  border-radius: 30%;
+  gap: 10px;
+}
+
+.ins-image {
+  width: 25px;
+  filter: brightness(10);
+}
+
+/* @media (max-width: 767px) {
+  .ins-preview-wrapper {
+    flex-direction: column;
+    height: 95vh;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1100px) {
+  .ins-preview-wrapper {
+    flex-direction: flex column;
+    height: 95vh;
+  }
+} */
+
+/* .ins-preview-container:hover {
+  display: flex;
+  flex-direction: column;
+  background-color: #eef3ff;
+  width: 85%;
+  height: 85%;
+  transition: all 0.5s ease-out 1s;
+  animation: blink 0.2s ease;
+} */
+/* @keyframes blink {
+  0% {
+    width: 95%;
+    height: 95%;
+  }
+  100% {
+    width: 98%;
+    height: 98%;
+  }
+} */
+
+/* @keyframes blink {
+  0% {
+    width: 95%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 85%;
+  }
+  100% {
+    width: 15%;
+  }
+} */
+
+/* @keyframes blink {
+  from {
+    width: 95%;
+  }
+  to {
+    width: 15%;
+  }
+} */
