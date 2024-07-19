@@ -100,3 +100,10 @@
 - RESTful APIs with Laravel
 - Error Handling and Logging
 - Testing and Debugging Laravel Applications
+---
+<div align="center">
+  <a href="https://useinsider.com/">
+    <img src="https://github.com/user-attachments/assets/fa153402-c35b-4191-9d92-7ce4140bdb18" alt="Logo" width="400" height="400">
+  </a>
+<h3 align="center">Company: Insider</h3>
+</div>
