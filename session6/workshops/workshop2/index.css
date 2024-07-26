@@ -1,0 +1,50 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-image 0.3s ease;
+}
+
+.circle:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.circle.middle {
+  background-color: #00ff00;
+  left: 125px;
+  top: 0;
+  z-index: 1;
+}
+
+.circle.left {
+  background-color: #ff0000;
+  left: 50px;
+  top: 75px;
+}
+
+.circle.right {
+  background-color: #0000ff;
+  left: 200px;
+  top: 75px;
+}
