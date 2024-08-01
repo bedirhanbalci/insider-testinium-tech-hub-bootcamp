@@ -1,0 +1,120 @@
+/* Mouse Events
+
+ #myButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+} */
+
+/* Keyboard Events
+
+#inputField {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#output {
+  font-size: 18px;
+  color: #333;
+}
+ */
+
+/* Form Events
+
+form {
+  margin-bottom: 20px;
+}
+
+#output {
+  font-size: 18px;
+  color: #333;
+}
+ */
+
+/* Document/Window Events
+
+#content {
+  height: 2000px;
+  padding: 20px;
+}
+
+#output {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+} */
+
+/* Touch Events
+
+#touchArea {
+  width: 100%;
+  height: 300px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #333;
+  border: 2px solid #000;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+} */
+
+/* Clipboard Events
+
+#textArea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#output {
+  font-size: 18px;
+  color: #333;
+}
+ */
+
+/* Drag and Drop Events
+
+#dragContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+
+#draggable {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+#dropZone {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #000;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+ */
