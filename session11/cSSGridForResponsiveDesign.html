@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid for Responsive Design</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .container > div {
+        background: lightcoral;
+        padding: 20px;
+      }
+      @media (min-width: 600px) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 900px) {
+        .container {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS Grid for Responsive Design
+         CSS Grid, sayfa düzenlerini daha esnek ve karmaşık bir şekilde oluşturmanızı sağlar. -->
+
+    <h1>CSS Grid Responsive Design Örneği</h1>
+    <div class="container">
+      <div>Box 1</div>
+      <div>Box 2</div>
+      <div>Box 3</div>
+    </div>
+  </body>
+</html>

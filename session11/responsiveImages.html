@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Images</title>
+  </head>
+  <body>
+    <!-- Responsive Images
+    Responsive image'lar, farklı cihazlarda ve ekran boyutlarında uyumlu şekilde görüntülenir. srcset ve sizes öznitelikleri ile bu sağlanabilir. -->
+
+    <h1>Responsive Images Örneği</h1>
+    <img
+      src="small.jpg"
+      srcset="small.jpg 600w, medium.jpg 1200w, large.jpg 1800w"
+      sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
+      alt="Example Image"
+    />
+  </body>
+</html>
