@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Using Browser's Developer Tools Debugging JavaScript Performance Profiling
+      Network Analysis Accessibility Testing
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Tarayıcı Geliştirici Araçlarını Kullanma (Using Browser's Developer Tools)
+         Tarayıcı geliştirici araçları, web sayfalarını analiz etmek, hata ayıklamak ve performans optimizasyonları yapmak için kullanılır. Genellikle F12 tuşu veya sağ tıklayıp "İncele" seçeneği ile açılır.
+
+         Örnek:
+
+         Elements Sekmesi: Sayfanın HTML ve CSS yapısını inceleyebilir, elementlerin stillerini değiştirebilirsiniz. Bu bölümde bir elemente sağ tıklayıp classList.add('new-class') gibi JavaScript kodları çalıştırabilirsiniz.
+         Console Sekmesi: JavaScript kodlarını test edebilir ve hata mesajlarını görebilirsiniz.
+         Sources Sekmesi: JavaScript dosyalarınızı inceleyebilir, kodun belirli bir noktasında durdurup (breakpoint) adım adım çalıştırabilirsiniz.
+         
+         ----------------------------------------
+
+         JavaScript Hata Ayıklama (Debugging JavaScript)
+         JavaScript hatalarını ayıklamak için console.log() kullanmak yaygın bir yöntemdir, ancak geliştirici araçlarında daha gelişmiş özellikler de vardır.
+
+         Örnek:
+
+         Breakpoint Ekleme: Sources sekmesinde bir satıra tıklayarak breakpoint ekleyebilir, kodun belirli bir   noktada durmasını sağlayabilirsiniz. Bu sayede, değişkenlerin değerlerini ve kodun nasıl çalıştığını adım adım inceleyebilirsiniz.
+         Watch Expressions: Bir değişkenin değerini sürekli izlemek için Watch alanına ekleyebilirsiniz.
+
+         ----------------------------------------
+
+         Performans Profilleme (Performance Profiling)
+         Web sayfanızın performansını analiz etmek için geliştirici araçlarının Performance sekmesini kullanabilirsiniz.
+
+         Örnek:
+
+         Kayıt Alma: Performans sekmesinde Start Profiling butonuna tıklayarak sayfanın performansını kaydedebilirsiniz. Bu, sayfanın yükleme süresi, animasyonlar ve etkileşimlerin analizini yapmanızı sağlar.
+         Yavaşlama ve FPS Düşüşleri: Kaydı durdurduktan sonra, grafik üzerinde yavaşlama noktalarını ve FPS (Frame Per Second) düşüşlerini görebilirsiniz.
+
+         ----------------------------------------
+
+         Ağ Analizi (Network Analysis)
+         Network sekmesi, sayfanın ağ isteklerini analiz etmenizi sağlar. Bu, sayfanın hangi kaynakları ne kadar sürede yüklediğini, hangi isteğin başarısız olduğunu ve daha fazlasını gösterir.
+
+         Network Bölümünü Kullanma:
+
+         Tüm İstekleri Görme: Sayfanız yüklendiğinde veya belirli bir aksiyon gerçekleştirildiğinde (örneğin, bir butona tıklama), hangi dosyaların yüklendiğini görebilirsiniz. Bu dosyalar arasında HTML, CSS, JavaScript, resimler, API istekleri (XHR/Fetch) bulunabilir.
+         İstek Detayları: Bir isteğin üzerine tıklayarak detaylarını görebilirsiniz. Bu detaylar arasında isteğin başlıkları (headers), gönderilen veri (request payload), yanıt süresi, yanıt durumu (200, 404 gibi) ve yanıt içeriği yer alır.
+         Performans Analizi: İsteklerin ne kadar sürede tamamlandığını, hangi isteklerin daha uzun sürdüğünü analiz edebilirsiniz. Bu sayede sayfanızın performansını artırmak için hangi dosyaların optimize edilmesi gerektiğini belirleyebilirsiniz.
+
+         ----------------------------------------
+         
+         Erişilebilirlik Testi (Accessibility Testing)
+         Lighthouse sekmesi ile sayfanızın erişilebilirlik durumunu analiz edebilirsiniz. Bu araç, web sayfanızın ne kadar erişilebilir olduğunu test eder ve iyileştirme önerileri sunar.
+
+         Örnek:
+
+         Lighthouse Raporu Oluşturma: Lighthouse sekmesine gidip, sayfanızın erişilebilirlik raporunu oluşturabilirsiniz. Bu rapor, renk kontrastları, alternatif metinler (alt text), form elemanlarının etiketleri gibi birçok kriteri değerlendirir.
+         Erişilebilirlik Uyarıları: Elements sekmesinde herhangi bir elementin üzerine gelerek erişilebilirlik uyarılarını görebilirsiniz. Örneğin, bir img etiketinin alt özelliği eksikse, bu uyarı burada gösterilir.
+
+         ----------------------------------------
+
+         Console'daki CORS Hataları (Cross-Origin Resource Sharing)
+         CORS (Cross-Origin Resource Sharing), bir web sayfasının farklı bir etki alanından (domain) kaynaklara erişim sağlama durumunu düzenler. Tarayıcılar güvenlik nedeniyle, bir sayfanın farklı bir etki alanından veri çekmesine genellikle izin vermez. Bu durum console'da bir hata mesajı olarak ortaya çıkar.
+
+         Örnek CORS Hatası:
+         Access to XMLHttpRequest at 'https://example.com/api' from origin 'https://yourdomain.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+         Bu Hata Nasıl Anlaşılır?
+
+         Bu hata, https://yourdomain.com adresindeki bir web sayfasının, https://example.com/api adresinden veri çekmeye çalıştığını ancak sunucunun CORS politikası nedeniyle bu isteği reddettiğini belirtir.
+         Hata mesajında genellikle hangi başlığın (header) eksik olduğu belirtilir (Access-Control-Allow-Origin gibi).
+
+         Çözüm:
+
+         Sunucu Tarafında: İstek göndermeye çalıştığınız sunucu, gerekli CORS başlıklarını eklemelidir. Örneğin, Access-Control-Allow-Origin başlığı ile izin verilen etki alanları belirlenir.
+         Geliştirici Olarak: Tarayıcıda geliştirme yapıyorsanız, cors-anywhere gibi araçlarla geçici olarak CORS kısıtlamalarını aşabilirsiniz, ancak bu güvenli bir çözüm değildir ve sadece geliştirme ortamında kullanılmalıdır.
+
+         -->
+
+    <h1 class="title">Hello World!</h1>
+    <script>
+      $(document).ready(function () {
+        $(".title").click(function () {
+          console.log("tiklandi");
+        });
+      });
+    </script>
+  </body>
+</html>
