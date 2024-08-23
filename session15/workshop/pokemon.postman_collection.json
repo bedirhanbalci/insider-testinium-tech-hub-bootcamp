@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "4a5e4bed-8790-4704-b65d-f8bf3e78f17a",
+		"name": "pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36963983"
+	},
+	"item": [
+		{
+			"name": "create pokemon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Jigglypuff\",\r\n        \"type\": \"Fairy\",\r\n        \"level\": 22,\r\n        \"hp\": 90,\r\n        \"attack\": 40,\r\n        \"defense\": 35,\r\n        \"speed\": 30\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pokemon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/a564712f-6f06-4912-9382-9d26d5294925",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"a564712f-6f06-4912-9382-9d26d5294925"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update pokemon",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Raichu\",\r\n    \"type\": \"Electric\",\r\n    \"level\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pokemon/a564712f-6f06-4912-9382-9d26d5294925",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"a564712f-6f06-4912-9382-9d26d5294925"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete pokemon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/a564712f-6f06-4912-9382-9d26d5294925",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"a564712f-6f06-4912-9382-9d26d5294925"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "battle pokemon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/battle/2d2486dc-9991-4d2f-be18-28d979f30540/a81325ac-495b-4135-8a01-5028d7f2ebe8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"battle",
+						"2d2486dc-9991-4d2f-be18-28d979f30540",
+						"a81325ac-495b-4135-8a01-5028d7f2ebe8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
